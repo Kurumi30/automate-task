@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "node --watch --env-file .env .",
-    "start": "pm2 start index.js --name automate-task",
+    "start": "node .",
+    "test": "pm2 start index.js --name automate-task",
     "delete": "pm2 delete automate-task",
     "status": "pm2 status automate-task"
   },
