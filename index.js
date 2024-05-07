@@ -5,7 +5,7 @@ const Logger = require("./logger")
 const logger = new Logger()
 
 cron.schedule(
-  "*/45 * * * *",
+  "*/20 * * * *",
   async () => {
     try {
       if (!process.env.WEBSITE_URL) throw new Error("WEBSITE_URL is required")
