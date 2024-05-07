@@ -1,20 +1,16 @@
 {
   "name": "automate-task",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Uma automação que envia requisições para o meu website",
   "main": "index.js",
   "scripts": {
     "dev": "node --watch --env-file .env .",
-    "start": "node .",
-    "test": "pm2 start index.js --name automate-task",
-    "delete": "pm2 delete automate-task",
-    "status": "pm2 status automate-task"
+    "start": "node ."
   },
   "author": "Kurumi30",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.8",
-    "node-cron": "^3.0.3",
-    "pm2": "^5.3.1"
+    "node-cron": "^3.0.3"
   }
 }
